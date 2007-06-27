@@ -1,0 +1,79 @@
+remind
+------------------------------------------
+Remind is a sophisticated calendar and alarm program. 
+It includes the following features:
+
+* A sophisticated scripting language and intelligent handling of 
+  exceptions and holidays.
+* Plain-text, PostScript and HTML output.
+* Timed reminders and pop-up alarms.
+* A friendly graphical front-end for people who don't want to learn the 
+  scripting language.
+* Facilities for both the Gregorian and Hebrew calendars.
+* Support for 12 different languages.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  tcl-8.4.15-1
+  tk-8.4.15-1
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.roaringpenguin.com/en/penguin/openSourceProducts/remind
+
+Canonical download:
+  http://www.roaringpenguin.com/files/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack remind-03.00.24-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./remind-03.00.24-X.cygport all
+
+This will create:
+  /usr/src/remind-03.00.24-X-src.tar.bz2
+  /usr/src/remind-03.00.24-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cm2rem.tcl
+  /usr/bin/kall
+  /usr/bin/rem
+  /usr/bin/rem2ps.exe
+  /usr/bin/remind.exe
+  /usr/bin/tkremind
+  /usr/share/doc/Cygwin/remind-03.00.24.README
+  /usr/share/doc/remind-03.00.24/COPYRIGHT
+  /usr/share/doc/remind-03.00.24/README
+  /usr/share/man/man1/cm2rem.1.gz
+  /usr/share/man/man1/kall.1.gz
+  /usr/share/man/man1/rem.1.gz
+  /usr/share/man/man1/rem2ps.1.gz
+  /usr/share/man/man1/remind.1.gz
+  /usr/share/man/man1/tkremind.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 03.00.24-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
