@@ -22,7 +22,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   make-3.81-1
@@ -37,15 +37,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack remind-03.00.24-X-src.tar.bz2
+  unpack remind-03.01.01-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./remind-03.00.24-X.cygport all
+  cygport ./remind-03.01.01-X.cygport all
 
 This will create:
-  /usr/src/remind-03.00.24-X-src.tar.bz2
-  /usr/src/remind-03.00.24-X.tar.bz2
+  /usr/src/remind-03.01.01-X-src.tar.bz2
+  /usr/src/remind-03.01.01-X.tar.bz2
 
 -------------------------------------------
 
@@ -57,9 +57,9 @@ Files included in the binary package:
   /usr/bin/rem2ps.exe
   /usr/bin/remind.exe
   /usr/bin/tkremind
-  /usr/share/doc/Cygwin/remind-03.00.24.README
-  /usr/share/doc/remind-03.00.24/COPYRIGHT
-  /usr/share/doc/remind-03.00.24/README
+  /usr/share/doc/Cygwin/remind-03.01.01.README
+  /usr/share/doc/remind-03.01.01/COPYRIGHT
+  /usr/share/doc/remind-03.01.01/README
   /usr/share/man/man1/cm2rem.1.gz
   /usr/share/man/man1/kall.1.gz
   /usr/share/man/man1/rem.1.gz
@@ -70,6 +70,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 03.01.01-1 -----
+Version bump.
 
 ----- version 03.00.24-1 -----
 Initial release for Cygwin.
