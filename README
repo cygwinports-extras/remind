@@ -37,29 +37,30 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack remind-03.01.01-X-src.tar.bz2
+  unpack remind-03.01.02-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./remind-03.01.01-X.cygport all
+  cygport ./remind-03.01.02-X.cygport all
 
 This will create:
-  /usr/src/remind-03.01.01-X-src.tar.bz2
-  /usr/src/remind-03.01.01-X.tar.bz2
+  /usr/src/remind-03.01.02-X-src.tar.bz2
+  /usr/src/remind-03.01.02-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/cm2rem.tcl
-  /usr/bin/kall
   /usr/bin/rem
   /usr/bin/rem2ps.exe
   /usr/bin/remind.exe
   /usr/bin/tkremind
-  /usr/share/doc/Cygwin/remind-03.01.01.README
-  /usr/share/doc/remind-03.01.01/COPYRIGHT
-  /usr/share/doc/remind-03.01.01/README
+  /usr/share/doc/Cygwin/remind-03.01.02.README
+  /usr/share/doc/remind-03.01.02/COPYRIGHT
+  /usr/share/doc/remind-03.01.02/README
+  /usr/share/doc/remind-03.01.02/README.UNIX
+  /usr/share/doc/remind-03.01.02/WHATSNEW
   /usr/share/man/man1/cm2rem.1.gz
   /usr/share/man/man1/kall.1.gz
   /usr/share/man/man1/rem.1.gz
@@ -70,6 +71,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 03.01.02-1 -----
+Version bump.
 
 ----- version 03.01.01-1 -----
 Version bump.
