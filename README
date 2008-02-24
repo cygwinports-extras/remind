@@ -13,23 +13,22 @@ It includes the following features:
 * Support for 12 different languages.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  tcl-8.4.15-1
-  tk-8.4.15-1
+  cygwin-1.5.25-7
+  tcl-8.4.18-1
+  tk-8.4.18-1
 
 Build requirements:
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  cygport-0.3.8-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   make-3.81-1
   sed-4.1.5-2
 
 Canonical website:
-  http://www.roaringpenguin.com/en/penguin/openSourceProducts/remind
+  http://www.roaringpenguin.com/products/remind
 
 Canonical download:
   http://www.roaringpenguin.com/files/download/
@@ -37,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack remind-03.01.02-X-src.tar.bz2
+  unpack remind-03.01.04-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./remind-03.01.02-X.cygport all
+  cygport ./remind-03.01.04-X.cygport all
 
 This will create:
-  /usr/src/remind-03.01.02-X-src.tar.bz2
-  /usr/src/remind-03.01.02-X.tar.bz2
+  /usr/src/remind-03.01.04-X-src.tar.bz2
+  /usr/src/remind-03.01.04-X.tar.bz2
 
 -------------------------------------------
 
@@ -56,11 +55,11 @@ Files included in the binary package:
   /usr/bin/rem2ps.exe
   /usr/bin/remind.exe
   /usr/bin/tkremind
-  /usr/share/doc/Cygwin/remind-03.01.02.README
-  /usr/share/doc/remind-03.01.02/COPYRIGHT
-  /usr/share/doc/remind-03.01.02/README
-  /usr/share/doc/remind-03.01.02/README.UNIX
-  /usr/share/doc/remind-03.01.02/WHATSNEW
+  /usr/share/doc/Cygwin/remind-03.01.04.README
+  /usr/share/doc/remind-03.01.04/COPYRIGHT
+  /usr/share/doc/remind-03.01.04/README
+  /usr/share/doc/remind-03.01.04/README.UNIX
+  /usr/share/doc/remind-03.01.04/WHATSNEW
   /usr/share/man/man1/cm2rem.1.gz
   /usr/share/man/man1/kall.1.gz
   /usr/share/man/man1/rem.1.gz
@@ -71,6 +70,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 03.01.04-1 -----
+Version bump.
 
 ----- version 03.01.02-1 -----
 Version bump.
