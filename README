@@ -13,7 +13,7 @@ It includes the following features:
 * Support for 12 different languages.
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-11
   tcl-8.4.18-1
   tk-8.4.18-1
 
@@ -21,7 +21,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.8-1
+  cygport-0.3.9-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   make-3.81-1
@@ -36,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack remind-03.01.04-X-src.tar.bz2
+  unpack remind-03.01.05-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./remind-03.01.04-X.cygport all
+  cygport ./remind-03.01.05-X.cygport all
 
 This will create:
-  /usr/src/remind-03.01.04-X-src.tar.bz2
-  /usr/src/remind-03.01.04-X.tar.bz2
+  /usr/src/remind-03.01.05-X-src.tar.bz2
+  /usr/src/remind-03.01.05-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,11 +55,11 @@ Files included in the binary package:
   /usr/bin/rem2ps.exe
   /usr/bin/remind.exe
   /usr/bin/tkremind
-  /usr/share/doc/Cygwin/remind-03.01.04.README
-  /usr/share/doc/remind-03.01.04/COPYRIGHT
-  /usr/share/doc/remind-03.01.04/README
-  /usr/share/doc/remind-03.01.04/README.UNIX
-  /usr/share/doc/remind-03.01.04/WHATSNEW
+  /usr/share/doc/Cygwin/remind-03.01.05.README
+  /usr/share/doc/remind-03.01.05/COPYRIGHT
+  /usr/share/doc/remind-03.01.05/README
+  /usr/share/doc/remind-03.01.05/README.UNIX
+  /usr/share/doc/remind-03.01.05/WHATSNEW
   /usr/share/man/man1/cm2rem.1.gz
   /usr/share/man/man1/kall.1.gz
   /usr/share/man/man1/rem.1.gz
@@ -70,6 +70,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 03.01.05-1 -----
+Version bump.
 
 ----- version 03.01.04-1 -----
 Version bump.
