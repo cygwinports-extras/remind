@@ -13,18 +13,19 @@ It includes the following features:
 * Support for 12 different languages.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-67
+  libgcc1-4.3.4-3
   tcl-8.4.19-2
   tk-8.4.19-3
 
 Build requirements:
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -36,57 +37,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack remind-03.01.06-X-src.tar.bz2
+  unpack remind-03.01.07-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./remind-03.01.06-X.cygport all
+  cygport ./remind-03.01.07-X.cygport all
 
 This will create:
-  /usr/src/remind-03.01.06-X-src.tar.bz2
-  /usr/src/remind-03.01.06-X.tar.bz2
+  /usr/src/remind-03.01.07-X-src.tar.bz2
+  /usr/src/remind-03.01.07-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/cm2rem.tcl
-  /usr/bin/rem
-  /usr/bin/rem2ps.exe
-  /usr/bin/remind.exe
-  /usr/bin/tkremind
-  /usr/share/doc/remind-03.01.06/COPYRIGHT
-  /usr/share/doc/remind-03.01.06/README
-  /usr/share/doc/remind-03.01.06/README.UNIX
-  /usr/share/doc/remind-03.01.06/WHATSNEW
-  /usr/share/man/man1/cm2rem.1.gz
-  /usr/share/man/man1/kall.1.gz
-  /usr/share/man/man1/rem.1.gz
-  /usr/share/man/man1/rem2ps.1.gz
-  /usr/share/man/man1/remind.1.gz
-  /usr/share/man/man1/tkremind.1.gz
-
-------------------
-
 Port Notes:
 
------ version 03.01.06-1 -----
-Version bump.
-
------ version 03.01.05-1 -----
-Version bump.
-
------ version 03.01.04-1 -----
-Version bump.
-
------ version 03.01.02-1 -----
-Version bump.
-
------ version 03.01.01-1 -----
-Version bump.
-
------ version 03.00.24-1 -----
-Initial release for Cygwin.
+----- version 03.01.07-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
