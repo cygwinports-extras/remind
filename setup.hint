@@ -1,5 +1,5 @@
 category: Utils
-requires: libgcc1 tcl tk
+requires: libgcc1 tcl tcl-tk
 sdesc: "Reminder and alarm program with Tk frontend"
 ldesc: "Remind is a sophisticated calendar and alarm program.
 It includes the following features:
