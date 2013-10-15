@@ -1,0 +1,36 @@
+This "don't use Microsoft" startup message not only includes a 5-second
+delay in starting remind, but it prevents tkremind from launching properly.
+
+--- origsrc/remind-03.01.13/src/init.c	2012-11-01 12:08:32.000000000 -0500
++++ src/remind-03.01.13/src/init.c	2013-10-15 01:51:17.018608200 -0500
+@@ -71,7 +71,7 @@
+  *  A minus sign alone indicates to take input from stdin
+  *
+  **************************************************************/
+-#if defined(__APPLE__) || defined(__CYGWIN__)
++#if 0 // defined(__APPLE__) || defined(__CYGWIN__)
+ static void rkrphgvba(int x);
+ #endif
+ 
+@@ -139,12 +139,6 @@ void InitRemind(int argc, char const *ar
+ 
+     int jul;
+ 
+-#if defined(__APPLE__)
+-    rkrphgvba(0);
+-#elif defined(__CYGWIN__)
+-    rkrphgvba(1);
+-#endif
+-
+     jul = NO_DATE;
+ 
+     /* Initialize global dynamic buffers */
+@@ -789,7 +783,7 @@ static void InitializeVar(char const *st
+     return;
+ }
+ 
+-#if defined(__APPLE__) || defined(__CYGWIN__)
++#if 0 // defined(__APPLE__) || defined(__CYGWIN__)
+ static char const pmsg1[] = {
+     0x4c, 0x62, 0x68, 0x20, 0x6e, 0x63, 0x63, 0x72, 0x6e, 0x65, 0x20,
+     0x67, 0x62, 0x20, 0x6f, 0x72, 0x20, 0x65, 0x68, 0x61, 0x61, 0x76,

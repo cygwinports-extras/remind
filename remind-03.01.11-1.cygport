@@ -1,7 +1,0 @@
-DESCRIPTION="Reminder and alarm program"
-HOMEPAGE="http://www.roaringpenguin.com/en/penguin/openSourceProducts/remind"
-SRC_URI="http://www.roaringpenguin.com/files/download/${P}.tar.gz"
-PATCH_URI="03.01.05-include-custom_h.patch"
-
-MAKEOPTS+=" -C src"
-DOCS="docs/README.UNIX docs/WHATSNEW"

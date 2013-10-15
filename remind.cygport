@@ -1,0 +1,35 @@
+NAME="remind"
+VERSION=03.01.13
+RELEASE=1
+CATEGORY="Utils"
+SUMMARY="Calendar and alarm program"
+DESCRIPTION="Remind is a sophisticated calendar and alarm service for
+UNIX/Linux. It is a command line application that interacts well with other
+programs. Remind offers a specialized scripting language which is able to
+express complicated scheduling methods in just a few lines."
+HOMEPAGE="http://www.roaringpenguin.com/products/remind"
+SRC_URI="http://www.roaringpenguin.com/files/download/${NAME}-${VERSION}.tar.gz"
+# extracted from base64 image in tkremind and converted with gif2png
+SRC_URI+=" remind.png"
+PATCH_URI="
+	03.01.05-include-custom_h.patch
+	03.01.13-cygwin.patch
+"
+
+PKG_NAMES="remind remind-gui"
+remind_CONTENTS="--exclude=tkremind* usr/bin/ usr/share/doc/ usr/share/man/"
+remind_gui_SUMMARY="Tk GUI frontend for the Remind calendar program"
+remind_gui_REQUIRES="remind tcl-tk" # tcl-tcllib (should be detected)
+remind_gui_CONTENTS="usr/bin/tkremind usr/share/applications/
+                     usr/share/man/man1/tkremind.* usr/share/pixmaps/"
+
+MAKEOPTS+=" -C src"
+
+src_install() {
+	cd ${B}
+	cygmake install-nostripped DESTDIR=${D}
+	doicon ${S}/remind.png
+	make_desktop_entry tkremind "TkRemind" remind "Office;Calendar"
+}
+
+DOCS="docs/README.UNIX docs/WHATSNEW"
