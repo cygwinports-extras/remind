@@ -1,6 +1,45 @@
 This "don't use Microsoft" startup message not only includes a 5-second
 delay in starting remind, but it prevents tkremind from launching properly.
 
+--- origsrc/remind-03.01.15/configure.in	2015-07-27 14:35:51.000000000 -0500
++++ src/remind-03.01.15/configure.in	2017-03-27 22:46:17.938283400 -0500
+@@ -14,36 +14,6 @@ EOF
+ 
+ AC_CONFIG_HEADER(src/config.h)
+ 
+-if test "`uname -s`" = "Darwin" ; then
+-   trap 'echo Be patient...' INT TERM
+-   cat <<'EOF'
+-
+-Please don't use Apple products.  This script will continue in 30 seconds
+-if you insist on compiling Remind on Mac OS X.
+-
+-EOF
+-    for i in 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 ; do
+-        sleep 1
+-    done
+-    trap - INT
+-    trap - TERM
+-fi
+-
+-if uname -s | grep -i -q 'cygwin' ; then
+-   trap 'echo Be patient...' INT TERM
+-   cat <<'EOF'
+-
+-Please don't use Microsoft products.  This script will continue in 30
+-seconds if you insist on compiling Remind on Cygwin.
+-
+-EOF
+-    for i in 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 ; do
+-        sleep 1
+-    done
+-    trap - INT
+-    trap - TERM
+-fi
+-
+ dnl Checks for programs.
+ AC_PROG_CC
+ AC_PROG_INSTALL
 --- origsrc/remind-03.01.13/src/init.c	2012-11-01 12:08:32.000000000 -0500
 +++ src/remind-03.01.13/src/init.c	2013-10-15 01:51:17.018608200 -0500
 @@ -71,7 +71,7 @@

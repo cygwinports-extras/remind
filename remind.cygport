@@ -1,5 +1,5 @@
 NAME="remind"
-VERSION=03.01.13
+VERSION=03.01.15
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="Calendar and alarm program"
